@@ -276,7 +276,7 @@ public class GatePerformance {
             try {
 
                 Class.forName("com.mysql.cj.jdbc.Driver");
-                con = DriverManager.getConnection("jdbc:mysql://localhost/igate","root","*?lhf2JHG");
+                con = DriverManager.getConnection("jdbc:mysql://localhost/igate","root","");
                 pst = con.prepareStatement("insert into gateperformance (imports20, imports40, exports20, exports40, empties20, empties40)values(?,?,?,?,?,?)");
 
                 //pst.setDate(1, (java.sql.Date) new Date());
